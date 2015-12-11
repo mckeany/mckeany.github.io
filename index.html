@@ -4,19 +4,56 @@
     <meta charset="UTF-8">
     <title>Mckeany</title>
 	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/background.cycle.js"></script>
+<script type="text/javascript">
+            $(document).ready(function() {
+                $("body").backgroundCycle({
+                    imageUrls: [
+						'img/bgdeer.jpg',
+						'img/bgisland.jpg',
+						'img/bgmistyhill.jpg',
+						'img/bgnorthenlightshill.jpg',
+						'img/bgriverflow.jpg',
+						'img/bgsnowyhill.jpg',
+						'img/bgstarrynightmountain.jpg',
+                    ],
+                    fadeSpeed: 2000,
+                    duration: 5000,
+                    backgroundSize: SCALING_MODE_COVER
+                });
+            });
+        </script>
 		<style>
+
+		h1   {color:white; font-size: 2em;}
 		body {background-o: orange; background-image: url("img/bgdeer.jpg"); background-size:cover; background-attachment: fixed;}
 		h1   {color:white; font-size: 1em;}
 		p    {color:white;}
+    .introbox{
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  border: #solid 10px #000;
+  background-color: rgba(0, 0, 0, 0.46);
+  width: 20%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
 		</style>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   </head>
-  <body>
-
+  
+  <body style="margin: 0;">
   <center>
-<p>Welcome to my site!</p>
-<h1>@mckeany_</h1>
+<div class="introbox">
+  <h1>Welcome to my site!</h1>
+<p>@mckeany_</p>
+</div>
   </center>
   </body>
 </html>
